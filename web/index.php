@@ -44,7 +44,7 @@ $app->get('/', function() use($app) {
 
     curl_close($curl);
 
-    $return_string .= "VAR DUMP: " . var_dump(json_decode($result, true));
+    $return_string .= "VAR DUMP: " . $result; //var_dump(json_decode($result, true));
 
     $return_string .= "<br>Email: " . $email . "<br>Campaign: " . $campaign; 
 
